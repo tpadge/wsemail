@@ -1,0 +1,99 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato';
+}
+
+header img {
+  height: 8vh;
+  padding-top: 2vh;
+  cursor: pointer;
+  padding-left: 2vw;
+  padding-bottom: 2vh;
+}
+
+.main-backdrop {
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(54, 100, 185, 0.94) 0%, rgba(10, 131, 168, 0.753) 60%);
+  padding-left: 2vw;
+  height: 32vh;
+  color: white;
+  text-align: center;
+  padding-top: 3vh;
+}
+
+.top-copy {
+  font-weight: 300;
+  font-size: 3.5vh;
+}
+
+.bottom-copy {
+  font-weight: 300;
+  font-size: 5vh;
+}
+
+.copy-header {
+  font-weight: 400;
+  font-size: 5vh;
+}
+
+.main-copy {
+  font-weight: 300;
+  font-size: 2.2vh;
+  padding: 2vh;
+  border-bottom: 0.5px solid grey;
+}
+
+.CTA {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: rgba(99, 134, 201, 0.94);
+  outline: none;
+  border: 0;
+  height: 7vh;
+  text-align: center;
+  border-radius: 4px;
+  transition: 0.2s ease;
+  margin: 2vh;
+}
+
+.cta-button a{
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+  font-size: 2.4vh;
+  padding: 2vh;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: black;
+}
+
+footer {
+  padding: 2vh;
+  font-size: 1.8vh;
+  font-weight: 300;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+}
+
+.social {
+  height: 3vh;
+  width: auto;
+  padding-left: 1vh;
+}

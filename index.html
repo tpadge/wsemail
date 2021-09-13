@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SAS Email Template</title>
+  <style>
+
+    html {
+        overflow-y: scroll;
+    }
+    body {
+      background-color: white;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  overflow-y: scroll;
+}
+
+header img {
+  height: 8vh;
+  padding-top: 2vh;
+  cursor: pointer;
+  padding-left: 2vw;
+  padding-bottom: 2vh;
+}
+
+.main-backdrop {
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(54, 100, 185, 0.94) 0%, rgba(10, 131, 168, 0.753) 60%);
+  padding-left: 2vw;
+  height: 32vh;
+  color: white;
+  text-align: center;
+  padding-top: 3vh;
+}
+
+.top-copy {
+  font-weight: 300;
+  font-size: 3.5vh;
+}
+
+.bottom-copy {
+  font-weight: 300;
+  font-size: 5vh;
+}
+
+.copy-header {
+  font-weight: 400;
+  font-size: 5vh;
+}
+
+.main-copy {
+  font-weight: 300;
+  font-size: 2.2vh;
+  padding: 2vh;
+  border-bottom: 0.5px solid grey;
+}
+
+.CTA {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: rgba(99, 134, 201, 0.94);
+  outline: none;
+  border: 0;
+  height: 7vh;
+  text-align: center;
+  border-radius: 4px;
+  transition: 0.2s ease;
+  margin: 2vh;
+}
+
+.cta-button a{
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+  font-size: 2.4vh;
+  padding: 2vh;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: black;
+}
+
+footer {
+  padding: 2vh;
+  font-size: 1.8vh;
+  font-weight: 300;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+}
+
+.social {
+  height: 3vh;
+  width: auto;
+  padding-left: 1vh;
+}
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <a href='#'>
+      <img src='data:image/png;base64,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'> 
+    </a>
+  </header>
+  
+  <div class='main-backdrop'>
+    <h2 class='top-copy'>
+      5 evaluations focused on analytical marketing solutions
+    </h2>
+    <h1 class='bottom-copy'>
+      SAS is a leader in all of them
+    </h1>
+  </div>
+
+  <div class='main-copy'>
+    <h1 class='copy-header'>
+      SAS named a leader in marketing technology across 5 evaluations.
+    </h1>
+    <a href='#' class='copy-link'>
+      Read the reports
+    </a>
+    <p class='copy'>
+      We've been saying it for years: SAS is unmatched when it comes to enabling organizations to 
+      better understand their customers and create personalized, profitable customer journeys.
+    <br></br>
+      But you don't have to take our word for it.
+    <br></br>
+      The two largest software analyst firms recently named SAS a leader in marketing technology -
+      from customer analytics to campaign management to decisioning platforms.
+    <br></br>
+      You're invited to explore the five reports, as well as a ton of resources to help you
+      create exceptional customer experiences.
+    </p>
+    <div class='CTA'>
+      <button class='cta-button'>
+        <a href='#'>
+          Explore analyst reports
+        </a>
+      </button>
+    </div>
+    
+    <div class='social-links'>
+      <div class='facebook'>
+        <a href='#'>
+          <img class='social' src='https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png'>
+        </a>
+      </div>
+      <div class='twitter'>
+        <a href='#'>
+          <img class='social' src='https://bankimooncentre.org/wp-content/uploads/2020/05/twitter-icon-square-logo-108D17D373-seeklogo.com_.png'>
+        </a>
+      </div>
+      <div class='linkedin'>
+        <a href='#'>
+          <img class='social' src='https://bankimooncentre.org/wp-content/uploads/2020/05/LinkedIn-Icon-Square.png'>
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p class='footer-small'>
+      Don't miss important updates from SAS! Please add <a href='#'>sas.com</a> as a domain in your 
+      <a href='#'>safe sender</a> list.
+      Want to get more out of your relationship with SAS? <a href='#'>Create a SAS profile</a>.
+      <br></br>
+        SAS places great value in fair information practices and in connection with the management of our contact database, we
+        would like to remind you that SAS Institute Inc. may use your personal contact details for marketing purposes, as stated
+        in the <a href='#'>SAS Privacy Statement</a>. If you do not want SAS Institute Inc. to contact you by email for marketing purposes,
+        please <a href='#'>opt out here</a>. To contact SAS via postal mail: SAS, SAS Campus Drive, Cary NC 27513 USA. ATTN: Legal
+        Division/Privacy Manager.
+      <br></br>
+        SAS and all other SAS Institute Inc. product or service names are registered trademarks or trademarks of SAS Institute
+        Inc. in the USA and other countries. ® indicates USA registration. Other brand and product names are trademarks of their
+        respective companies.
+      <br></br>
+        Copyright © SAS Institute Inc. All rights reserved.
+    </p>
+  </footer>
+</body>
+
+</html>
